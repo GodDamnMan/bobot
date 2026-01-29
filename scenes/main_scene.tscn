@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://duwbwfj1owqkp"]
+
+[ext_resource type="Script" uid="uid://35n7ou2qh5ky" path="res://script/character.gd" id="1_pw63i"]
+[ext_resource type="Texture2D" uid="uid://bauwe4ewfo8q5" path="res://textures/bobot.png" id="2_pw63i"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("1_pw63i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(-7, -3)
+texture = ExtResource("2_pw63i")
